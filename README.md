@@ -1,45 +1,59 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+# Cute Cakes by Bronagh MS2
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Second Milestone Project for Code Institute by Lorna Clarke.
 
-## Gitpod Reminders
+### User Experience
+===============  
+The brief for this project calls for "an interactive front-end site.  
+The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals."  
+Keeping this in mind I intend to design a intuitive and responsive website for independently run cake business Cute Cakes by Bronagh. 
+  
+*Owner Objectives*
+* As the company owner, I would like to provide customers with general information on the company .ie who it's ran by, their story, products available etc.
+* As the company owner, I would like an area to display pictures of past work and insperation for customers' orders.
+* As the company owner, I would like an area to answer frequently asked questions.
+* As the company owner, I would like a map displaying designated pick up points.
+* As the company owner, I would like when pick up point is selected, the information will be retained in the below form.
+* As the company owner, I would like a calendar displaying available consulation appointments and when the business in able/un-able to take on cake orders.
+* As the company owner, I would like when a date is selected in the calendar, the information will be retained in be below form.
+* As the company owner, I would like a contact form for customers to contact the company.
+* As the company owner, I would like a form that allows customers to make bookings for consultations.
+* As the company owner, I would like that when a customer gets in contact via the form they will recieve an automated e-mail letting them know their contact has been recieved, and someone will be in contact as soon as possible.
+* As the company owner, I would like an interactive cake editor that allows the customer to send on a general idea of what kind of cake they require. The cake will change appearence depending on the customers' selection.
+  
+*User Stories*
+* As a potential customer of the company, I would like to visit a website that is intuitive and easy to use. With easy to locate information and responsive design that assures me I have executed the task at hand correctly.
+* As a potential customer, I would like to view the offerings of the comany with regards to cakes, fillings, icings etc.
+* As a potential customer, I would like to view products the company have made previously so that I can assess the quality of the product.
+* As a potential customer, I would like to see reviews from previous customers so that I can assess the quality of the product.
+* As a potential customer, I would like to see the pick up points and select the point that is closest to me.
+* As a potential customer, I would like to see if the company can take on orders/ a consultation at a time that suits me.
+* As a potential customer, I would like to be able to contact the company with any queries I may have.
+* As a potential customer, I would like to recieve e-mail confirmation that the company has recieved it and that they will be in contact soon.
+* As a potential customer, I would like to see a clean and consistent website regardless of whether I choose to visit on desktop, tablet or mobile.
+* As a return customer, I would like the website to retain my previous location and cake order so that I may have a quicker check out on my next visit.
+  
+| Feature                                                           | Importance | Feasibility |
+|-------------------------------------------------------------------|------------|-------------|
+| Gallery                                                           |1           |5            |
+| Calendar                                                          |2           |4            |
+| Map                                                               |2           |4            |
+| About Section                                                     |1           |5            |
+| Links to Social Media                                             |1           |5            |
+| Frequently Asked Questions                                        |1           |5            |
+| Reviews                                                           |5           |3            |
+| Contact Form                                                      |2           |4            |
+| Map sends selection to Form                                       |3           |2            |
+| Calendar sends selection to Form                                  |3           |2            |
+| Form sends automated E-mail                                       |3           |4            |
+| Cake Customization Section                                        |4           |1            |
+| Responsive design for browser, mobile and tablet                  |1           |5            |
+| Site retains previous pick up and cake selections for return users|5           |3            |  
+  
+*Wireframes*
+![wireframe](ccbbwireframems2.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### Coding Process & Bugs  
+======================
