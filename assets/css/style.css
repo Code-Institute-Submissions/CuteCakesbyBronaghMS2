@@ -15,11 +15,22 @@ h1 {
     padding-bottom: 10px;
 }
 
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #00a4b4;
+    text-align: center;
+}
+
 p {
     font-family: "Cardo", sans-serif;
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*----------Navbar----------*/
@@ -28,6 +39,7 @@ p {
     background-color: #00a4b4;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .navbar ul li a {
@@ -72,6 +84,23 @@ p {
     display: block;
 }
 
+/*----------Gallery----------*/
+
+.val-list {
+    font-family: "Cardo", sans-serif;
+    text-align: center;
+    list-style: none;
+}
+
+.val-head {
+    text-decoration: underline;
+}
+
+.carousel {
+    height: 500px;
+    width: 400px;
+    margin: auto;
+}
 /*----------Footer----------*/
 
 .footer {

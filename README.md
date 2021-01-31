@@ -57,3 +57,5 @@ Keeping this in mind I intend to design a intuitive and responsive website for i
 
 ### Coding Process & Bugs  
 ======================
+
+gallery scrolling over navbar, played with z-index on gallery first. Wouldnt work, changed z-index on navbar, worked.
