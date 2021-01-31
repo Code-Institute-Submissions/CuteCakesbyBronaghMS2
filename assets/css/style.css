@@ -1,10 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@300&display=swap');
 
+/*----------Body----------*/
+
+body {
+    background-image: url("/assets/images/ccbb-bg.png");
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #00a4b4;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: "Cardo", sans-serif;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 /*----------Navbar----------*/
 
 .navbar {
     background-color: #00a4b4;
     width: 100%;
+    position: fixed;
 }
 
 .navbar ul li a {
@@ -16,6 +39,22 @@
 
 .navbar a:hover {
     text-decoration: underline;
+}
+
+/*----------Content Container----------*/
+
+.content-container {
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/*----------Hero Image----------*/
+
+.hero {
+    width: 100%;
+    height: 610px;
 }
 
 /*----------Footer----------*/
