@@ -58,4 +58,16 @@ Keeping this in mind I intend to design a intuitive and responsive website for i
 ### Coding Process & Bugs  
 ======================
 
-gallery scrolling over navbar, played with z-index on gallery first. Wouldnt work, changed z-index on navbar, worked.
+gallery scrolling over navbar, played with z-index on gallery first. Wouldnt work, 
+changed z-index on navbar, worked.
+loading maps api with code Institute tutorial. Map didnt render, added given css, 
+box loads with a something went wrong notification.
+tried moving the JS from the HTML to the main.js, same problem.
+checked js console in inspect, realised i had not authorised my workspace on my api 
+restrictions. map was far too zoomed out, changed the zoom value in my js function. 
+map too wide, changed width and position with css.
+markers didn't load, typo in js function? went through code Institute tutoral again,
+markers working.
+Seriously hard time getting emailjs to work, tried various methods and tutorals. Eventually,
+copied and pasted the code from the playground area of the emailjs site and it worked. I edited
+the code to suit the website

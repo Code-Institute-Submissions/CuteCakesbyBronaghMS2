@@ -60,6 +60,7 @@ section {
     width: 80%;
     height: 100%;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 /*----------Hero Image----------*/
@@ -101,6 +102,48 @@ section {
     width: 400px;
     margin: auto;
 }
+
+/*----------Map----------*/
+
+div #map {
+    min-height: 360px;
+    width: 80%;
+    margin: auto;
+}
+
+/*----------Contact----------*/
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+.field {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+input {
+    width: 80%;
+    border-color: #00a4b4;
+}
+
+#button {
+    background-color: #00a4b4;
+    color: #ffffff;
+    border-color: #00a4b4;
+    border-radius: 10%;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+#button:hover {
+    background-color: #ffffff;
+    color: #00a4b4;
+}
+
 /*----------Footer----------*/
 
 .footer {
