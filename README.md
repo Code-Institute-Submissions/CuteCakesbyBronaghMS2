@@ -70,4 +70,15 @@ markers didn't load, typo in js function? went through code Institute tutoral ag
 markers working.
 Seriously hard time getting emailjs to work, tried various methods and tutorals. Eventually,
 copied and pasted the code from the playground area of the emailjs site and it worked. I edited
-the code to suit the website
+the code to suit the website.
+For the caldendar https://www.youtube.com/watch?v=wY2dao1hJms&t=2163s&ab_channel=TylerPotts tutorial.
+Edited CSS to suit website, edited JS to change number of days in each month.
+struggling with Js to change pictures. Eventually figure it out with jQuery for just the base section.
+for the filling section > picture changed depending on base and filling selection. Need to run function
+only if two radios are selected. Listing two ids doesnt work > changes so that if just vanilla base is selected
+it becomes a picture of vanilla base with chocolate topping. Will change to vanilla base and vanilla topping
+if both radios are selected.
+was wrapping the click function in another function, this is unneccessary. though note worthy that the single selection section
+only works correclty if i have it wrapped in a function. 
+I'd like the cake to move down as you scroll through the list as it goes out of sight, not sure if i will get around to this due to time 
+restrictions.
