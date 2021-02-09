@@ -3,58 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
     <title>Cute Cakes by Bronagh</title>
 </head>
 <body>
+    <a id="home"></a>
 <!-- Navbar-->
-    <nav class="navbar navbar-light navbar-expand-md mx-auto">
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mr-auto mx-auto">
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#about">
-              About
-            </a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#menu">
-              Menu
-            </a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#gallery">
-              Gallery
-            </a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#reviews">
-              Reviews
-            </a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#faq">
-              Faq
-            </a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#pickup">
-              Pick Up
-            </a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
+    <nav class="navbar">
+      <div class="dropdown">
+      <button onclick="dropFunction()" class="dropbtn">Navigation</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pickup">Pick Up</a>
+        <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </div>
+  </nav>
+
 <!--Body Content-->
     <div class="content-container">
 <!--Hero Image-->
@@ -93,7 +65,6 @@
             </h1>
             <img class="menu-img" src="assets/images/ccbb-menu.png" alt="Cute cakes by Bronagh menu. Sponges: vanilla, chocolate, chocolate fudge, chocolate orange, carrot, lemon, coffee and raspberry & white chocolate. Biscuit cakes: plain chocolate biscuit, Baileys chocolate biscuit. Fillings and buttercreams: vanilla, chocolate, chocolate fudge, chocolate orange, peanutbutter chocolate, lemon, coffee and salted caramel. Decorations: buttercream piping, modelling chocolate figurines, fondant icing coverings and fondant figurines.">
         </section>
-<!--Gallery-->
         <section id="gallery">
             <h1>
                 Gallery
@@ -110,185 +81,164 @@
             <p>
                 Valentine's Share Box €25
             </p>
-            <ul class="val-list">
-                <li>Includes:</li>
-                <li>
+            <div class="val-list">
+                <p>Includes:</p>
+                <p>
                     - 2 Raspberry & White Chocolate Ganache Cupcakes
-                </li>
-                <li>
+                </p>
+                <p>
                     - 1 large Belgian Chocolate Biscuit Cake with Baileys
-                </li>
-                <li>
+                </p>
+                <p>
                     - 2 round Belgian Chocolate Biscut Cake with Baileys
-                </li>
-                <li>
+                </p>
+                <p>
                     - 2 Strawberries dipped in Chocolate, sitting on top of an Oreo dipped in Chocolate
-                </li>
-                <li>
+                </p>
+                <p>
                     - 2 Donut shaped Cupcakes, covered in Chocolate Ganche
-                </li>
-                <li>
+                </p>
+                <p>
                     - 2 Heart shaped Hot Chocolate Bombs, filled with Cadbury Hot Chocolate powder and Marshmallows
-                </li>
-                <li>
+                </p>
+                <p>
                     - A selection of Handmade Chocolates
-                </li>
-            </ul>
-            <div id="carousel-images" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-images" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-images" data-slide-to="1"></li>
-                    <li data-target="#carousel-images" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/images/gallery/valentinesbox.png" alt="variety vanentines themed box. Box includes: 2 raspberry and white chocolate cupcakes, 1 large baileys biscuit cake, 2 small baileys biscuit cake, 2 chocolate covered strawberries sitting on oreo, 2 chocolate covered donuts, 2 hot chocolate bombs and a selection of handmade chocolates.">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/valentinescupcakes1.jpg" alt="valentines cupcakes decorated with red and pink toppers, hearts and custom embossing">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/valentinescupcakes2.jpg" alt="valentines cupcakes decorated with red and pink toppers, hearts and custom embossing">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/butterflyflowerswedding.png" alt="White wedding cake with handmade white flowers and pink flowers and white butterflies.">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/elegantchristening.png" alt="Buttercream top tier, blue fondant bottom tier, decotated with white handmade flowers">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/crystalswanwedding.png" alt="4 tier white wedding cake decorated with white brush embroidery flowers and hand made pink flowers">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/dovesweddingbrush.png" alt="3 tier white wedding cake decorated with white brush embroidery flowers and handmade pink flowers">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/beautyandbeast5tier.png" alt="4 tier beauty and the beast themed cake top tier decorated as a crown, second tier hand made rose in glass, third tier The Beast's blue suit, fourth tier Belle's yellow dress.">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/beautybeast2tier.png" alt="3 tier Beauty and The Beast themed cake, first tier rose contained in glass, second tier handpainted stained glass, bottom tier Belle's yellow dress.">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/drwho.png" alt="3 tier Dr Who themed cake, top tier tardis crash landing into the cake, second tier Matt Smith Dr Who bow tie and blazer, bottom tier hand painted galaxy sky.">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/harrypotter.png" alt="Handmade fondant Harry Potter figurine">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/aliceinwonderland.png" alt="3 tier Alice in Wonderland themed cake, top tier is Mad Hatter's hat, second tier is decorated with pages from the book, bottom tier is decorated with the name Alice, flowers and Rabbt's pocket watch">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/superman.jpg" alt="Open shirt to reveal Superman's blue colour and logo">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/freddiebabyshark.jpg" alt="children's baby shark themed cake with fondant figurines">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/gabrielbabyshark.png" alt="2 tier children's baby shark themed cake">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/friends.png" alt="Friends themed cake with fondant couch, coffee and custom figurine to match birthday girls appearence">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/bunny.jpg" alt="children's cake made to look like bunny">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/candydrip.png" alt="pink and yellow candy themed drip cake">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/dinosaurs.png" alt="dinosaur figurine scene cake">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/elephant.jpg" alt="christening cake with handmade fondant elephant figurine">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/farm.png" alt="children's farm yard themed cake with fondant figurines">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/giraffe.jpg" alt="blue cake decorated with name and handmade fondant giraffe and baloon figurines">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/flowerchristening.png" alt="white christening cake decorated with purple flowers and sleeping baby">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/girlanddog.jpg" alt="white cake decorated with custom hand made fondant figurines to look like birthday girl and her dog">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/golfer.png" alt="golf themed cake topped with hand made giant golf ball">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/hennessy.png" alt="hennessy themed drip cake decorated with small bottles of hennessy and chocolate covered strawberries">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/horse.png" alt="horse themed cake with hand made fondant horse figurines">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/makeupcase.jpg" alt="make up themed cake with miniature hand made make up brush and pallette fontdant figurines">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/pariswatercolour.png" alt="Paris themed cake with hand painted Parisienne details and landmarks">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/pilotmanutd.jpg" alt="man united themed cake for a pilot, a handmade pilot figurine sits on top of the cake">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/pugcake.png" alt="Cake is carved and airbrushed to look like a pug">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/pugsurprise.png" alt="handmade fondant pug bursts out of cake, decorated with pink icing and sprinkles">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/sunflowers.jpg" alt="white cake decorated with fondant sunflowers">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/teapot.png" alt="tea party themed cake decorated with handmade fondant teapot and flowers">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/unicorncake.jpg" alt="cake decorated with white and rainbow buttercream to look like unicorn">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/unicornrainbow.jpg" alt="white cake topped with hand made fondant unicorn and rainbow">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/watercolourname.jpg" alt="watercolour cake decorated with hand painted flowers and a name">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/70thcupcakes1.png" alt="70th birthday cupcakes decorated with purple toppers and flowers with custom embossing">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/images/gallery/7thbirthdaycupcakes2.jpg" alt="70th birthday cupcakes decorated with purple toppers and flowers with custom embossing">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/pilotcupcake.jpg" alt="pilot themed cupcakes with custom pilots uniform toppers">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/christmascollection.png" alt="seasonal christmas offering, all made from chocolate biscuit cake and covered with fondant to look like various characters. Characters include: Hot chocolate, Santa Claus, Mrs Claus, Christmas pudding, snowflake drip cake, Rudolph and snowman">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/christmasdripcake.jpg" alt="red, glittery Christmas themed cake topped with white drip icing and decorated with snowflakes">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/christmaspudding.jpg" alt="Chocolate biscuit cake molded and decorated to look like a traditional Christmas pudding">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/halloween4tier.jpg" alt="4 tier halloween themed cake. Top tier witches cauldron,  second tier spooky eyes on black, third tier zombie and fourth tier orange monster">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/halloweencharactercupcakes.jpg" alt="cupcakes with halloween character toppers. Toppers include: withch, frankenstein, vampire, zombie, pumpkin, spider">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/gallery/halloweenchoccupcakes.jpg" alt="cupcakes topped with chocolate buttercream and halloween candies">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-images" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-images" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                </p>
             </div>
+            <div class="cake-gallery">
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/valentinesbox.png" alt="variety vanentines themed box. Box includes: 2 raspberry and white chocolate cupcakes, 1 large baileys biscuit cake, 2 small baileys biscuit cake, 2 chocolate covered strawberries sitting on oreo, 2 chocolate covered donuts, 2 hot chocolate bombs and a selection of handmade chocolates.">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/valentinescupcakes1.jpg" alt="valentines cupcakes decorated with red and pink toppers, hearts and custom embossing">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/butterflyflowerswedding.png" alt="White wedding cake with handmade white flowers and pink flowers and white butterflies.">
+                </div> 
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/elegantchristening.png" alt="Buttercream top tier, blue fondant bottom tier, decotated with white handmade flowers">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/crystalswanwedding.png" alt="4 tier white wedding cake decorated with white brush embroidery flowers and hand made pink flowers">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/beautyandbeast5tier.png" alt="4 tier beauty and the beast themed cake top tier decorated as a crown, second tier hand made rose in glass, third tier The Beast's blue suit, fourth tier Belle's yellow dress.">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/beautybeast2tier.png" alt="3 tier Beauty and The Beast themed cake, first tier rose contained in glass, second tier handpainted stained glass, bottom tier Belle's yellow dress.">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/drwho.png" alt="3 tier Dr Who themed cake, top tier tardis crash landing into the cake, second tier Matt Smith Dr Who bow tie and blazer, bottom tier hand painted galaxy sky.">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/harrypotter.png" alt="Handmade fondant Harry Potter figurine">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/aliceinwonderland.png" alt="3 tier Alice in Wonderland themed cake, top tier is Mad Hatter's hat, second tier is decorated with pages from the book, bottom tier is decorated with the name Alice, flowers and Rabbt's pocket watch">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/superman.jpg" alt="Open shirt to reveal Superman's blue colour and logo">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/freddiebabyshark.jpg" alt="children's baby shark themed cake with fondant figurines">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/gabrielbabyshark.png" alt="2 tier children's baby shark themed cake">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/friends.png" alt="Friends themed cake with fondant couch, coffee and custom figurine to match birthday girls appearence">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/bunny.jpg" alt="children's cake made to look like bunny">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/candydrip.png" alt="pink and yellow candy themed drip cake">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/dinosaurs.png" alt="dinosaur figurine scene cake">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/elephant.jpg" alt="christening cake with handmade fondant elephant figurine">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/farm.png" alt="children's farm yard themed cake with fondant figurines">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/giraffe.jpg" alt="blue cake decorated with name and handmade fondant giraffe and baloon figurines">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/flowerchristening.png" alt="white christening cake decorated with purple flowers and sleeping baby">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/girlanddog.jpg" alt="white cake decorated with custom hand made fondant figurines to look like birthday girl and her dog">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/golfer.png" alt="golf themed cake topped with hand made giant golf ball">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/hennessy.png" alt="hennessy themed drip cake decorated with small bottles of hennessy and chocolate covered strawberries">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/horse.png" alt="horse themed cake with hand made fondant horse figurines">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/makeupcase.jpg" alt="make up themed cake with miniature hand made make up brush and pallette fontdant figurines">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/pariswatercolour.png" alt="Paris themed cake with hand painted Parisienne details and landmarks">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/pilotmanutd.jpg" alt="man united themed cake for a pilot, a handmade pilot figurine sits on top of the cake">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/pugcake.png" alt="Cake is carved and airbrushed to look like a pug">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/pugsurprise.png" alt="handmade fondant pug bursts out of cake, decorated with pink icing and sprinkles">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/sunflowers.jpg" alt="white cake decorated with fondant sunflowers">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/teapot.png" alt="tea party themed cake decorated with handmade fondant teapot and flowers">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/unicornrainbow.jpg" alt="white cake topped with hand made fondant unicorn and rainbow">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/watercolourname.jpg" alt="watercolour cake decorated with hand painted flowers and a name">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/70thcupcakes1.png" alt="70th birthday cupcakes decorated with purple toppers and flowers with custom embossing">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="assets/images/gallery/7thbirthdaycupcakes2.jpg" alt="70th birthday cupcakes decorated with purple toppers and flowers with custom embossing">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/pilotcupcake.jpg" alt="pilot themed cupcakes with custom pilots uniform toppers">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/christmascollection.png" alt="seasonal christmas offering, all made from chocolate biscuit cake and covered with fondant to look like various characters. Characters include: Hot chocolate, Santa Claus, Mrs Claus, Christmas pudding, snowflake drip cake, Rudolph and snowman">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/christmasdripcake.jpg" alt="red, glittery Christmas themed cake topped with white drip icing and decorated with snowflakes">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/christmaspudding.jpg" alt="Chocolate biscuit cake molded and decorated to look like a traditional Christmas pudding">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/halloween4tier.jpg" alt="4 tier halloween themed cake. Top tier witches cauldron,  second tier spooky eyes on black, third tier zombie and fourth tier orange monster">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/halloweencharactercupcakes.jpg" alt="cupcakes with halloween character toppers. Toppers include: withch, frankenstein, vampire, zombie, pumpkin, spider">
+                </div>
+                <div class="cake-pics">
+                    <img class="gallery-pics" src="/assets/images/gallery/halloweenchoccupcakes.jpg" alt="cupcakes topped with chocolate buttercream and halloween candies">
+                </div>
+                <div class="arrow-text">Previous<span class="next-arrow">Next</span></div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>      
         </section>
 <!--Reviews-->
         <section id="reviews">
@@ -408,6 +358,7 @@
                     <label for="message">Message:</label>
                     <input class="input message" type="text" name="message" id="message" placeholder="Type your message here:">
                 </div>
+<!-- https://www.youtube.com/watch?v=wY2dao1hJms&t=2165s&ab_channel=TylerPotts -->
                 <div class="field date">
                     <label>Select a Date:</label>
                     <div class="date-picker">
@@ -429,69 +380,69 @@
                             <img id="cake-toggle" src="assets/images/cakespec/emptycake.png" alt="default empty cake image">
                         </div>
                         <div class="basesection">
-                            <label for="cakespec-subhead" class="cakespec-subhead" style="text-decoration: underline;">Base:</label>
+                            <label class="cakespec-subhead" style="text-decoration: underline;">Base:</label>
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio vanilla">Vanilla</label>
+                            <label class="cakespec-radio vanilla">Vanilla</label>
                             <input type="radio" value="vanilla-base" name="base" id="van-base-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio chocolate">Chocolate</label>
+                            <label class="cakespec-radio chocolate">Chocolate</label>
                             <input type="radio" value="chocolate-base" name="base" id="choc-base-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio carrot">Carrot</label>
+                            <label class="cakespec-radio carrot">Carrot</label>
                             <input type="radio" value="carrot-base" name="base" id="carrot-base-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio lemon">Lemon</label>
+                            <label class="cakespec-radio lemon">Lemon</label>
                             <input type="radio" value="lemon-base" name="base" id="lemon-base-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio coffee">Coffee</label>
+                            <label class="cakespec-radio coffee">Coffee</label>
                             <input type="radio" value="coffee-base" name="base" id="coffee-base-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio raspwhite">Raspberry & White Chocolate</label>
+                            <label class="cakespec-radio raspwhite">Raspberry & White Chocolate</label>
                             <input type="radio" value="raspchoc-base" name="base" id="rasp-choc-base-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio chocbisc">Chocolate Biscuit</label>
+                            <label class="cakespec-radio chocbisc">Chocolate Biscuit</label>
                             <input type="radio" value="baileyschocbisc-base" name="base" id="baileys-bisc-rad">
                         </div>
                         <div class="fillingsection">
-                            <label for="cakespec-subhead" class="cakespec-subhead" style="text-decoration: underline;">Filling:</label>
+                            <label class="cakespec-subhead" style="text-decoration: underline;">Filling:</label>
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio vanilla">Vanilla</label>
+                            <label class="cakespec-radio vanilla">Vanilla</label>
                             <input type="radio" value="vanilla-filling" name="fill" id="van-fill-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio chocolate">Chocolate</label>
+                            <label class="cakespec-radio chocolate">Chocolate</label>
                             <input type="radio" value="chocolate-filling" name="fill" id="choc-fill-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio chocolatefudge">Chocolate Fudge</label>
+                            <label class="cakespec-radio chocolatefudge">Chocolate Fudge</label>
                             <input type="radio" value="chocfudge-filling" name="fill" id="fud-fill-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio chocolateorange">Chocolate Orange</label>
+                            <label class="cakespec-radio chocolateorange">Chocolate Orange</label>
                             <input type="radio" value="chocorange-filling" name="fill" id="choc-ora-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio peanutbutter">Peanut Butter</label>
+                            <label class="cakespec-radio peanutbutter">Peanut Butter</label>
                             <input type="radio" value="peanut-filling" name="fill" id="pb-fill-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio lemon">Lemon</label>
+                            <label class="cakespec-radio lemon">Lemon</label>
                             <input type="radio" value="lemon-filling" name="fill" id="lemon-fill-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio coffee">Coffee</label>
+                            <label class="cakespec-radio coffee">Coffee</label>
                             <input type="radio" value="coffee-filling" name="fill" id="coffee-fill-rad">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio saltedcaramel">Salted Caramel</label>
+                            <label class="cakespec-radio saltedcaramel">Salted Caramel</label>
                             <input type="radio" value="saltedcaramel-filling" name="fill" id="carm-fill-rad">
                         </div>
                         <div class="decorationselection">
-                            <label for="cakespec-subhead" class="cakespec-subhead" style="text-decoration: underline;">Decoration:</label>
+                            <label class="cakespec-subhead" style="text-decoration: underline;">Decoration:</label>
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio buttercream">Buttercream Piping</label>
+                            <label class="cakespec-radio buttercream">Buttercream Piping</label>
                             <input type="radio" value="buttercream-dec" name="decoration">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio fondantcovering">Fondant Covering</label> 
+                            <label class="cakespec-radio fondantcovering">Fondant Covering</label> 
                             <input type="radio" value="fondantcover-dec" name="decoration">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio modellingchoc">Modelling Chocolate Figurines</label>
+                            <label class="cakespec-radio modellingchoc">Modelling Chocolate Figurines</label>
                             <input type="radio" value="modellingchoc-dec" name="decoration">
                             <br>
-                            <label for="cakespec-radio" class="cakespec-radio fondantfig">Fondant Figurines</label> 
+                            <label class="cakespec-radio fondantfig">Fondant Figurines</label> 
                             <input type="radio" value="fondantfig-dec" name="decoration">
                         </div>
                     </div>
@@ -518,13 +469,15 @@
             </li>
         </ul>
     </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgWBzHO8pvR14XkgiM411uZzP4i9CEbNc&callback=initMap"></script>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
         emailjs.init('user_VguXMS3gXpxEe4SNTclvo')
     </script>
     <script src="assets/js/main.js"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgWBzHO8pvR14XkgiM411uZzP4i9CEbNc&callback=initMap"></script>
 </body>
 </html>

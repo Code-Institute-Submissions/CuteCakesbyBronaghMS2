@@ -1,3 +1,50 @@
+/*---------- Navbar ----------*/
+
+/*-- Navbar --*/
+
+function dropFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+/*---------- Gallery ----------*/
+
+var slideIndex = [1];
+var slideId = ["cake-pics"];
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1};    
+  if (n < 1) {slideIndex[no] = x.length};
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+/*---------- Map ----------*/
+
 function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 11,
@@ -57,12 +104,10 @@ selected_date_element.dataset.value = selectedDate;
 
 populateDates();
 
-// EVENT LISTENERS
 date_picker_element.addEventListener('click', toggleDatePicker);
 next_mth_element.addEventListener('click', goToNextMonth);
 prev_mth_element.addEventListener('click', goToPrevMonth);
 
-// FUNCTIONS
 function toggleDatePicker (e) {
 	if (!checkEventPathForClass(e.path, 'dates')) {
 		dates_element.classList.toggle('active');
@@ -132,7 +177,6 @@ function populateDates (e) {
 	}
 }
 
-// HELPER FUNCTIONS
 function checkEventPathForClass (path, selector) {
 	for (let i = 0; i < path.length; i++) {
 		if (path[i].classList && path[i].classList.contains(selector)) {
@@ -180,7 +224,7 @@ document.getElementById('form')
     });
 });
 
-//Cake Selector
+/*---------- Cake Selector ----------*/
 //Base Slectors
 
 $(function(){
@@ -260,203 +304,205 @@ $("#van-base-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/vanillasaltcarm.png");
 });
 
-//Chocolate Base and ...
 
+//Chocolate Base and ...
+ 
 $("#choc-base-rad , #van-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/chocvanilla.png");
 });
-
+ 
 $("#choc-base-rad , #choc-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/chochoc.png");
 });
-
+ 
 $("#choc-base-rad , #fud-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocchocfudge.png");
 });
-
+ 
 $("#choc-base-rad , #choc-ora-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocorangechoc.png");
 });
-
+ 
 $("#choc-base-rad , #pb-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocpeanut.png");
 });
-
+ 
 $("#choc-base-rad , #lemon-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/choclemon.png");
 });
-
+ 
 $("#choc-base-rad , #coffee-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/choccoffee.png");
 });
-
+ 
 $("#choc-base-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocsaltcarm.png");
 });
-
+ 
 //Carrot Base and ...
-
+ 
 $("#carrot-base-rad , #van-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotvanilla.png");
 });
-
+ 
 $("#carrot-base-rad , #choc-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotchoc.png");
 });
-
+ 
 $("#carrot-base-rad , #fud-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotchocfudge.png");
 });
-
+ 
 $("#carrot-base-rad , #choc-ora-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotorangechoc.png");
 });
-
+ 
 $("#carrot-base-rad , #pb-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotpeanut.png");
 });
-
+ 
 $("#carrot-base-rad , #lemon-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotlemon.png");
 });
-
+ 
 $("#carrot-base-rad , #coffee-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotcoffee.png");
 });
-
+ 
 $("#carrot-base-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/carrotsaltcarm.png");
 });
-
+ 
 //Lemon Base and ...
-
+ 
 $("#lemon-base-rad , #van-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonvanilla.png");
 });
-
+ 
 $("#lemon-base-rad , #choc-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonchoc.png");
 });
-
+ 
 $("#lemon-base-rad , #fud-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonchocfudge.png");
 });
-
+ 
 $("#lemon-base-rad , #choc-ora-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonorangechoc.png");
 });
-
+ 
 $("#lemon-base-rad , #pb-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonpeanut.png");
 });
-
+ 
 $("#lemon-base-rad , #lemon-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonlemon.png");
 });
-
+ 
 $("#lemon-base-rad , #coffee-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/lemoncoffee.png");
 });
-
+ 
 $("#lemon-base-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/lemonsaltcarm.png");
 });
-
+ 
 //Coffee Base and ...
-
+ 
 $("#coffee-base-rad , #van-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeevanilla.png");
 });
-
+ 
 $("#coffee-base-rad , #choc-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeechocolate.png");
 });
-
+ 
 $("#coffee-base-rad , #fud-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeechocfudge.png");
 });
-
+ 
 $("#coffee-base-rad , #choc-ora-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeeorangechoc.png");
 });
-
+ 
 $("#coffee-base-rad , #pb-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeepeanut.png");
 });
-
+ 
 $("#coffee-base-rad , #lemon-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeelemon.png");
 });
-
+ 
 $("#coffee-base-rad , #coffee-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeecoffee.png");
 });
-
+ 
 $("#coffee-base-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/coffeesaltcarm.png");
 });
-
+ 
 //Raspberry Base and ...
-
+ 
+ 
 $("#rasp-choc-base-rad , #van-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchocvanilla.png");
 });
-
+ 
 $("#rasp-choc-base-rad , #choc-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchocchoc.png");
 });
-
+ 
 $("#rasp-choc-base-rad , #fud-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchocchocfudge.png");
 });
-
+ 
 $("#rasp-choc-base-rad , #choc-ora-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchocorangechoc.png");
 });
 $("#rasp-choc-base-rad , #pb-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchocpeanut.png");
 });
-
+ 
 $("#rasp-choc-base-rad , #lemon-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchoclemon.png");
 });
-
+ 
 $("#rasp-choc-base-rad , #coffee-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/raspchoccoffee.png");
 });
-
+ 
 $("#rasp-choc-base-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/raspsaltcarm.png");
 });
 //Bailey's Biscuit Base and ...
-
+ 
 $("#baileys-bisc-rad , #van-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgevanilla.png");
 });
-
+ 
 $("#baileys-bisc-rad , #choc-fill-rad").click(function() {
   $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgechoc.png");
 });
-
+ 
 $("#baileys-bisc-rad , #fud-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgechocfudge.png");
 });
-
+ 
 $("#baileys-bisc-rad , #choc-ora-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgeorangechoc.png");
 });
 $("#baileys-bisc-rad , #pb-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgepeanut.png");
 });
-
+ 
 $("#baileys-bisc-rad , #lemon-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgelemon.png");
 });
-
+ 
 $("#baileys-bisc-rad , #coffee-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgecoffee.png");
 });
-
+ 
 $("#baileys-bisc-rad , #carm-fill-rad").click(function(){
     $("#cake-toggle").attr("src" , "assets/images/cakespec/chocfudgesaltcarm.png");
 });
